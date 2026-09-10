@@ -1,26 +1,51 @@
-# Python
+# Python bytecode and tooling caches
 __pycache__/
 *.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
-# Conda / virtual environments
+# Virtual environments and local environment files
 .venv/
 venv/
 env/
+ENV/
+.env
+.env.*
+!.env.example
 
-# YOLO model files
-*.pt
+# Jupyter and interactive tooling
+.ipynb_checkpoints/
 
-# Ultralytics output
+# YOLO/Ultralytics generated artifacts and model files
 runs/
+weights/
+*.pt
+*.onnx
+*.engine
+*.torchscript
 
-# Output images/videos
+# Generated predictions and exports
 outputs/*
 !outputs/.gitkeep
 
-# IDE
+# Dataset media and generated annotations
+Model_Training_Basics/dataset/**/images/
+Model_Training_Basics/dataset/**/labels/
+
+# IDE and editor files
 .vscode/
 .idea/
+*.code-workspace
 
-# Operating system
+# Logs, temporary files, and local OS metadata
+*.log
+*.tmp
+*.temp
+*.bak
 .DS_Store
 Thumbs.db
+desktop.ini
