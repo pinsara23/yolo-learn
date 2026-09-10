@@ -1,0 +1,11 @@
+name: yolo-basics
+
+channels:
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - ultralytics
+      - opencv-python

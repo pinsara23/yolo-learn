@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Conda / virtual environments
+.venv/
+venv/
+env/
+
+# YOLO model files
+*.pt
+
+# Ultralytics output
+runs/
+
+# Output images/videos
+outputs/*
+!outputs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
